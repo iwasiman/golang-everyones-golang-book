@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func someFunc(a, b) {
+func someFunc(a int, b int) int {
 	return a + b
 }
 

@@ -6,6 +6,10 @@ import (
 	"testing"
 )
 
+func main() {
+
+}
+
 // Examplesという機能。標準出力をそのままテストできる
 func ExampleHi() {
 	fmt.Println("Hi!")
@@ -42,6 +46,14 @@ func TestMain(m *testing.M) {
 	exitCode := m.Run() // 同じファイル内のTest～メソッドを全部実行
 	shutdown()          // DBのクリア処理とか後処理
 	os.Exit(exitCode)
+}
+
+func shutdown() {
+	panic("unimplemented")
+}
+
+func setup() {
+	panic("unimplemented")
 }
 
 // +buid integ

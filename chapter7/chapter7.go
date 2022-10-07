@@ -58,11 +58,10 @@ type MyNullString struct {
   err = row.Scan(&user.ID, &user.Name)
   // この変数をJSON化処理や標準出力に渡してもうまく動作する
 
-
-  func main() {
+func main() {
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
 	  return c.String(http.StatusOK, "Hello")
 	})
 	e.Logger.Fatal(e.Start(":8080"))
-  }
+}
